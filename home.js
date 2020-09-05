@@ -1,4 +1,4 @@
-const fadeIn = () => {
+window.onload=function fadeIn(){
     var fSize = 30;
     var opac = 0;
     var space = 3;
@@ -269,17 +269,26 @@ const glideUp2 = () => {
         }
     }
     
-    var b2Left = 30;
-    var b2Right = 71;
-    var id6=setInterval(frame6,312)
+    var b2Right = 51;
+    var id6=setInterval(frame6,45)
     function frame6() {
-        if (b2Left == 34) {
+        if (b2Right == 87) {
             clearInterval(id6);
         } else {
-            b2Left++;
-            b2Right=b2Right+3;
-            document.getElementById("brownImage2").style.gridColumn = b2Left + '/' + b2Right;
+            b2Right++;
+            document.getElementById("brownImage2").style.gridColumn = '34/' + b2Right;
 
+        }
+    }
+    var bWidth = 1100;
+    var id8=setInterval(frame8,10)
+    function frame8() {
+        if(bWidth == 900){
+            clearInterval(id8);
+
+        }else{
+            bWidth--;
+            document.getElementById("b2Image").style.width =bWidth +'px';
         }
     }
     document.getElementById("button3").style.zIndex=-1;

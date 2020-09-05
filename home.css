@@ -146,7 +146,7 @@ body{
 #brownImage2{
     z-index: 2;
     background-color: #a68256;
-    grid-column: 30/71;
+    grid-column: 34/51;
     grid-row: 100/101;
     overflow: hidden;
 }
@@ -174,5 +174,6 @@ body{
     height: 500px;
 }
 #b2Image{
-    width:900px;
+    width: 700px;
+    margin-right: 40%;
 }
